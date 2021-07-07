@@ -72,7 +72,13 @@ class EmployeeController extends Controller
      */
     public function show($id)
     {
-        //
+        $employee = Employee::find($id);
+        $employee->foto = url('storage/'.$employee->foto);
+        return response([
+            'status' => true,
+            'message' => "Detail Data Karyawan",
+            'data' => $employee
+        ], 200);
     }
 
     /**

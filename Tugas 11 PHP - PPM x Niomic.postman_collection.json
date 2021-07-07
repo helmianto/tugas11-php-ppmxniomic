@@ -82,6 +82,30 @@
 			"response": []
 		},
 		{
+			"name": "Get Detail Karyawan Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Update Karyawan",
 			"request": {
 				"method": "POST",
